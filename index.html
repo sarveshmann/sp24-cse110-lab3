@@ -25,18 +25,27 @@
             </ul>
         </nav>
     </header>
-
+    <hr />
     <main>
         <h1>Team 24 Meeting Notes</h1>
         <h2>Meeting #1</h2>
         <h4>Date: April 15, 2024</h4>
         <h4>Location: Geisel Library, UCSD</h4>
         <h3 id="agenda">Agenda: Introduce team members and brainstorm for the CSE 110 project.</h3>
+        
         <section>
             <h4 id="attendance-list"><u>Attendance Lists:</u></h4>
             <ol>
                 <li>Terrance Tan</li>
                 <li>Sarvesh Mann</li>
+                <li>Ishaan Kale</li>
+                <li>Cynthia Delira</li>
+                <li>David Choi</li>
+                <li>Harsh Gurnani</li>
+                <li>Eugenie Ren</li>
+                <li>Jeffrey Lee</li>
+                <li>Sofia Nguyen</li>
+                <li>Geena Limfat</li>
             </ol>
         </section>
 
@@ -57,6 +66,8 @@
             <p>
                 After introductions, we began the brainstorming session. To get some idea of the direction we want 
                 to go with for our project, we decided to use <a href="https://chat.openai.com/">Chat-GPT</a> to get some initial ideas.
+                We want to focus on minimalism. But while trying to do that, we want to also build a meaningful webpage that can be used 
+                and maintained upon by future students. 
             </p>
         </section>
         
@@ -87,10 +98,85 @@
             </video>
         </section>
     </main>
-    <hr />
+
     <footer>
         <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmU0bzJpY2NzM2QxdWdtNmF3Y3FucjgzdG5zb3N3MnlrNjZlcW4waCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/RlhbpcHWRfN5pSAq8h/giphy.gif" alt="See U" width="150" height="120">
-        <span>Thank you for your time and consideration</span>
+        <span><b>Thank you for your time and consideration!</b></span>
+        <br>
+        <br>
+        <details>
+            <summary>&copy; Created by Sarvesh Mann</summary>
+            <p>Hi! I am a computer science student at UC San Diego. Know more about: <a href="https://sarveshmann.github.io/Lab-1-CSE-110/">me</a>.</p>
+        </details>
+
+        <hr />
+        <h4 id="subscribe">Take a quick survery to help us get feedback:</h4>
+        <form onsubmit="alert('Response recorded. Thank you!')">
+            <fieldset>
+                <legend>This meeting was useful</legend>
+            
+                <input type="radio" id="agree" name="consensus" value="A" />
+                <label for="agree">Agree</label><br />
+            
+                <input type="radio" id="somewhat-agree" name="consensus" value="S" />
+                <label for="somewhat-agree">Somewhat agree</label><br />
+            
+                <input type="radio" id="disagree" name="consensus" value="D" />
+                <label for="disagree">Disagree</label>
+            </fieldset>
+
+            <br>
+
+            <label for="concerns">Any questions or concerns:</label>
+            <br>
+            <textarea id="concerns" name="concerns" rows="5" cols="33">Type here...</textarea>
+            
+            <br>
+            <br>
+
+            <label for="school-year-choice">Enter your school year:</label>
+            <input list="school-year" id="school-year-choice" name="school-year-choice" />
+
+            <datalist id="school-year">
+            <option value="First"></option>
+            <option value="Second"></option>
+            <option value="Third"></option>
+            <option value="Fourth"></option>
+            </datalist>
+
+            <br>
+            <br>
+            
+            <label for="major-select">Choose your major:</label>
+            <select name="majors" id="major-select">
+            <option value="">--Please choose an option--</option>
+            <option value="Computer-Science">Computer Science</option>
+            <option value="Data-Science">Data Science</option>
+            <option value="Cognitive-Science">Cognitive Science</option>
+            <option value="Computer-Engineering">Computer Engineering</option>
+            <option value="Other">Other</option>
+            </select>
+
+            <br>
+            <br>
+
+            <div>Select all that describes you:</div>
+            <input type="checkbox" id="option1" name="option1" value="Student">
+            <label for="option1"> I am a student.</label><br>
+            <input type="checkbox" id="option2" name="option2" value="UCSD">
+            <label for="option2"> I am enrolled at UC San Diego.</label><br>
+            <input type="checkbox" id="option3" name="option3" value="CSE110">
+            <label for="option3"> I am currently taking CSE 110.</label><br><br>
+
+            <label for="start">Submission date:</label>
+            <input type="date" id="start" name="submission-start" value="2024-04-15" min="2024-01-01" max="2024-12-31" />
+            
+            <br>
+            <br>
+
+            <input type="text" placeholder="Enter Email Address" />
+            <button>Submit your response</button>
+        </form>
     </footer>
   </body>
 </html>
