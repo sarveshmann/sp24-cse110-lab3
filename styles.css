@@ -9,6 +9,10 @@
 h1 {
     /* color 1 */
     color: rgb(6, 67, 147);
+    /* text align */    
+    text-align: center;
+    /* text decor */
+    text-decoration: underline;
 }
 
 
