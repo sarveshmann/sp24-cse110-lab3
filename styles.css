@@ -1,3 +1,5 @@
+/* External CSS */
+
 /* custom fonts */
 .jersey-10-regular {
     font-family: "Jersey 10", sans-serif;
@@ -65,7 +67,6 @@ text {
     /* absolute unit #1 */
     width: 300px;
     font-size: 1.2em;
-    /* color 3 */
     color: hsl(20deg 82% 43%);
     display: block;
 }
@@ -229,7 +230,7 @@ button:active{
     position: static;
 }
 
-
+/* flex stuff */
 .container {
     font-size: 1.2em;
     display: flex;
@@ -286,6 +287,7 @@ button, input, option, select, label, datalist {
     grid-row: auto;
 }
 
+/* media queries */
 @media (any-hover: hover) {
     a:hover {
         background: yellow;
