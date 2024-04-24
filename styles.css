@@ -78,6 +78,17 @@ li {
     font-size: 1.5rem;
 }
 
+/* Pseudo class */
+button:hover {
+    background-color: aliceblue;
+    font-size: 1.2em;
+}
+
+button:active{
+    background-color:rgb(59, 157, 244);
+    font-size: 1.2em;
+}
+
 /* box1 */
 .box {
     /* min and max width */
