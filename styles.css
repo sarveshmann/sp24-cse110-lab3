@@ -1,6 +1,5 @@
 /* External CSS */
 
-/* custom fonts */
 .jersey-10-regular {
     font-family: "Jersey 10", sans-serif;
     font-weight: 400;
@@ -43,17 +42,17 @@ ol li {
 }
 
 /* Child combinator */
-div > text {
+ol > li {
     align-items: center;
 }
 
 /* General sibling */
-ul ~ li {
+ol ~ li {
     align-items: center;
 }
 
 /* Adjacent sibling */
-section + ul {
+ol + li {
     align-items: center;
 }
 
@@ -105,7 +104,7 @@ fieldset {
 
 select {
     /* absolute unit #2 */
-    width: 2in;
+    width: 190px;
     background-color: aliceblue;
 }
 
@@ -127,7 +126,7 @@ p {
 
 nav {
     /* absolute unit #3 */
-    width: 10.5cm;
+    width: 400px;
     font-size: 1.2em;
 }
 
@@ -155,12 +154,12 @@ button:hover {
 button:active{
     background-color:rgb(59, 157, 244);
     font-size: 1.2em;
+    min-width:
 }
 
 
 /* box1 */
 .box {
-    min-width: fit-content;
     max-width: fit-content;
     /* longhand border */
     border-top-style:ridge;
@@ -230,7 +229,7 @@ button:active{
     position: static;
 }
 
-/* flex stuff */
+
 .container {
     font-size: 1.2em;
     display: flex;
@@ -287,7 +286,7 @@ button, input, option, select, label, datalist {
     grid-row: auto;
 }
 
-/* media queries */
+/* media queries*/
 @media (any-hover: hover) {
     a:hover {
         background: yellow;
