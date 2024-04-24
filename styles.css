@@ -45,6 +45,8 @@ p {
 textarea {
     /* color 6 */
     color: color(from rgb(46, 48, 46) srgb r g b / 0.5)
+    /* background color */
+    background-color: aliceblue;
 }
 
 
