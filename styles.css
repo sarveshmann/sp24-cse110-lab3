@@ -123,6 +123,8 @@ li {
     padding: 1ch;
     /* Shorthand margin */
     margin: 3ch;
+    /* display block */
+    display: block;
 }
 
 /* box3 */
@@ -135,6 +137,8 @@ li {
     /* margin auto*/
     margin: auto;
     width: fit-content;
+    /* display inline-block */
+    display: inline-block;
 }
 
 
