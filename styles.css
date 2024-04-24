@@ -1,5 +1,3 @@
-/* External CSS stylesheet */
-
 /* custom fonts */
 .jersey-10-regular {
     font-family: "Jersey 10", sans-serif;
@@ -11,73 +9,119 @@
     font-family: "Satisfy", cursive;
     font-weight: 400;
     font-style: normal;
-} 
+}  
 
 /* initializing variables */
 :root {
     --main-h5-color: rebeccapurple;
 }
 
-/* style to title */
-h1 {
-    /* color 1 */
-    color: rgb(6, 67, 147);
-    /* text align */    
-    text-align: center;
-    /* text decor */
-    text-decoration: underline;
+/* universal */
+*{
+   box-sizing: border-box;
 }
 
+/* id */
+#names {
+    color: rgb(9, 9, 9);
+}
 
-/* style to all h3 */
+/* attribute */
+a[href*="attendance-list"]{
+    color: blue;
+    /* nested */
+    &:hover{
+        color:turquoise;   
+    }
+}
+
+/* Descendent */
+ol li {
+    align-items: center;
+}
+
+/* Child combinator */
+div > text {
+    align-items: center;
+}
+
+/* General sibling */
+ul ~ li {
+    align-items: center;
+}
+
+/* Adjacent sibling */
+section + ul {
+    align-items: center;
+}
+
+/* Combining two */
+ol.box {
+    align-items: center;
+}
+
+/* Adding color */
+text {
+    /* absolute unit #1 */
+    width: 300px;
+    font-size: 1.2em;
+    /* color 3 */
+    color: hsl(20deg 82% 43%);
+    display: block;
+}
+
+h1 {
+    font-family: "Jersey 10", sans-serif;
+    color: rgb(6, 67, 147);
+    font-size: 3em;
+    text-align: center;
+}
+
+/* has selector */
+section:has(+ p){
+    margin-bottom: auto;
+}
+
+h3 {
+    color: rgb(30, 122, 180);
+    font-size: 1.5em;
+}
+
 h4 {
-    /* color 2 */
     color: #138013; 
+    font-size: 1.3em;
 }
 
 h5 {
     /* using variable and fallback */
     color: var(--main-h5-color, purple);
+    font-size: 1.1em;
 }
 
-/* style to all text */
-text {
-    /* color 3 */
-    color: hsl(20deg 82% 43%);
-    /* absolute unit #1 */
-    width: 300px;
-}
-
-/* style to all h3 */
-h3 {
-    /* color 4 */
-    color: DarkCyan;
-}
-
-/* style to paragraphs */
-p {
-    /* color  5*/
-    color: color-mix(in lch, rgb(4, 4, 4), rgb(10, 10, 10));
-    /* relative unit #1 */
-    font-size: 1.3em;
-    /* relative unit #2 */
-    width: 90vw;
-}
-
-/* style to textarea */
-textarea {
-    /* color 6 */
-    color: color(from rgb(46, 48, 46) srgb r g b / 0.5)
-    /* background color */
-    background-color: aliceblue;
-    /* height and width */
-    height: 10vw;
-    width: 70vw;
+fieldset {
+    width: 50vw;
 }
 
 select {
     /* absolute unit #2 */
     width: 2in;
+    background-color: aliceblue;
+}
+
+datalist {
+    background-color: aliceblue;
+    font-size: 1.2em;
+}
+
+p {
+    /* relative unit #1 */
+    width: 90vw;
+    /* relative unit #2 */
+    font-size: 1.3em;
+    /* text */
+    color: color-mix(in lch, rgb(4, 4, 4), rgb(10, 10, 10));
+    text-decoration:none;
+    text-align: left;
 }
 
 nav {
@@ -86,9 +130,19 @@ nav {
     font-size: 1.2em;
 }
 
+
 li {
     /* relative unit #3 */
     font-size: 1.5rem;
+}
+
+textarea {
+    font-size: 1.2em;
+    height: 10vw;
+    width: 70vw;
+    /* background color */
+    background-color: aliceblue;
+    color: color(from rgb(46, 48, 46) srgb r g b / 0.5)
 }
 
 /* Pseudo class */
@@ -102,9 +156,9 @@ button:active{
     font-size: 1.2em;
 }
 
+
 /* box1 */
 .box {
-    /* min and max width */
     min-width: fit-content;
     max-width: fit-content;
     /* longhand border */
@@ -139,6 +193,7 @@ button:active{
     margin-left: 3ch;
     margin-bottom: 3ch;
     margin-right: 3ch;
+    width:fit-content;
 
 }
 
@@ -153,9 +208,9 @@ button:active{
     padding: 1ch;
     /* Shorthand margin */
     margin: 3ch;
-    /* display block */
+    width:fit-content;
+
     display: block;
-    /* position sticky */
     position: sticky;
 }
 
@@ -169,19 +224,23 @@ button:active{
     /* margin auto*/
     margin: auto;
     width: fit-content;
-    /* display inline-block */
+
     display: inline-block;
-    /* position static */
     position: static;
 }
 
-/* flex layout */
+
 .container {
     font-size: 1.2em;
     display: flex;
     flex-wrap: wrap;
     flex-flow: column;
     flex-direction: column;
+}
+
+/* selector list */
+button, input, option, select, label, datalist {
+    font-size: 1em;
 }
 
 /* grid stuff */
@@ -204,7 +263,6 @@ button:active{
     text-align: center;
     font-size: 30px;
 }
-
 .item1{
     grid-area: header;
 }
@@ -228,7 +286,6 @@ button:active{
     grid-row: auto;
 }
 
-/* media query */
 @media (any-hover: hover) {
     a:hover {
         background: yellow;
@@ -241,3 +298,4 @@ button:active{
         width: 100%
     }
 }
+
