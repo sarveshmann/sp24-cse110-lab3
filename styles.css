@@ -71,6 +71,68 @@ li {
     font-size: 1.5rem;
 }
 
+/* box1 */
+.box {
+    /* longhand border */
+    border-top-style:ridge;
+    border-bottom-style: ridge;
+    border-left-style: ridge;
+    border-right-style: ridge;
+
+    border-top-color: #138013;
+    border-bottom-color: #138013;
+    border-left-color: #138013;
+    border-right-color: #138013;
+
+    border-top-width: 0.2ch;
+    border-bottom-width: 0.2ch;
+    border-left-width: 0.2ch;
+    border-right-width: 0.2ch;
+
+    border-top-left-radius: 1ch;
+    border-top-right-radius: 1ch;
+    border-bottom-left-radius: 1ch;
+    border-bottom-right-radius: 1ch;
+
+    /* longhand padding */
+    padding-top: 1ch;
+    padding-left: 1ch;
+    padding-right: 1ch;
+    padding-bottom: 1ch;
+
+    /* longhand margin */
+    margin-top: 3ch;
+    margin-left: 3ch;
+    margin-bottom: 3ch;
+    margin-right: 3ch;
+
+}
+
+/* box2 */
+.box2 {
+    /* shorthand border */
+    border-style: ridge;
+    border-color: #138013;
+    border-width: 0.2ch;
+    border-radius: 1ch;
+    /* shorthand padding */
+    padding: 1ch;
+    /* Shorthand margin */
+    margin: 3ch;
+}
+
+/* box3 */
+.box3 {
+    border-style: ridge;
+    border-color: #138013;
+    border-width: 0.2ch;
+    border-radius: 1ch;
+    padding: 1ch;
+    /* margin auto*/
+    margin: auto;
+    width: fit-content;
+}
+
 
 
 
