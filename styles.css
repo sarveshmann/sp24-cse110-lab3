@@ -1,5 +1,10 @@
 /* External CSS stylesheet */
 
+/* initializing variables */
+:root {
+    --main-h5-color: rebeccapurple;
+}
+
 /* style to title */
 h1 {
     /* color 1 */
@@ -11,6 +16,11 @@ h1 {
 h4 {
     /* color 2 */
     color: #138013; 
+}
+
+h5 {
+    /* using variable and fallback */
+    color: var(--main-h5-color, purple);
 }
 
 /* style to all text */
