@@ -1,5 +1,18 @@
 /* External CSS stylesheet */
 
+/* custom fonts */
+.jersey-10-regular {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+} 
+
 /* initializing variables */
 :root {
     --main-h5-color: rebeccapurple;
@@ -213,4 +226,18 @@ button:active{
     grid-area: auto;
     grid-template-columns: max-content;
     grid-row: auto;
+}
+
+/* media query */
+@media (any-hover: hover) {
+    a:hover {
+        background: yellow;
+    }
+}
+
+/* media query for smaller screens */
+@media screen and (max-width: 600px) {
+    body {
+        width: 100%
+    }
 }
