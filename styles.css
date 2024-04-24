@@ -1,1 +1,41 @@
 /* External CSS stylesheet */
+
+/* style to title */
+h1 {
+    /* color 1 */
+    color: rgb(6, 67, 147);
+}
+
+
+/* style to all h3 */
+h4 {
+    /* color 2 */
+    color: #138013; 
+}
+
+/* style to all text */
+text {
+    /* color 3 */
+    color: hsl(20deg 82% 43%);
+}
+
+/* style to all h3 */
+h3 {
+    /* color 4 */
+    color: DarkCyan;
+}
+
+/* style to paragraphs */
+p {
+    /* color  5*/
+    color: color-mix(in lch, rgb(4, 4, 4), rgb(10, 10, 10));
+}
+
+/* style to textarea */
+textarea {
+    /* color 6 */
+    color: color(from rgb(46, 48, 46) srgb r g b / 0.5)
+}
+
+
+
