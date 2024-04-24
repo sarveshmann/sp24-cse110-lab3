@@ -1,2 +1,2 @@
-# Lab 2 - Starter
-Here is the link to my Meeting Minutes webpage: https://sarveshmann.github.io/Lab2_Starter/
+# Lab 3
+Here is the link to my Meeting Minutes webpage: sarveshmann.github.io/sp24-cse110-lab3-new
