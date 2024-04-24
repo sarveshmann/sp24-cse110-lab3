@@ -57,6 +57,9 @@ textarea {
     color: color(from rgb(46, 48, 46) srgb r g b / 0.5)
     /* background color */
     background-color: aliceblue;
+    /* height and width */
+    height: 10vw;
+    width: 70vw;
 }
 
 select {
@@ -77,6 +80,9 @@ li {
 
 /* box1 */
 .box {
+    /* min and max width */
+    min-width: fit-content;
+    max-width: fit-content;
     /* longhand border */
     border-top-style:ridge;
     border-bottom-style: ridge;
