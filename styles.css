@@ -27,6 +27,8 @@ h5 {
 text {
     /* color 3 */
     color: hsl(20deg 82% 43%);
+    /* absolute unit #1 */
+    width: 300px;
 }
 
 /* style to all h3 */
@@ -39,6 +41,10 @@ h3 {
 p {
     /* color  5*/
     color: color-mix(in lch, rgb(4, 4, 4), rgb(10, 10, 10));
+    /* relative unit #1 */
+    font-size: 1.3em;
+    /* relative unit #2 */
+    width: 90vw;
 }
 
 /* style to textarea */
@@ -48,6 +54,23 @@ textarea {
     /* background color */
     background-color: aliceblue;
 }
+
+select {
+    /* absolute unit #2 */
+    width: 2in;
+}
+
+nav {
+    /* absolute unit #3 */
+    width: 10.5cm;
+    font-size: 1.2em;
+}
+
+li {
+    /* relative unit #3 */
+    font-size: 1.5rem;
+}
+
 
 
 
