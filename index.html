@@ -12,6 +12,7 @@
     <link rel="manifest" href="favicon_io/site.webmanifest">
     <link rel="icon" type="image/png" sizes="48x48" href="favicon_io/favicon.ico">
 
+
     <!-- Added Internal CSS --> 
     <style>
     body {
@@ -24,11 +25,11 @@
       margin-bottom: 40px;
     } 
     </style>
-    
+
   </head>
   <body>
     <header>
-        <div>Jump ahead to:</div>
+        <div style="font-size: 1.5em;">Jump ahead to:</div>
         <nav>
             <ul>
                 <li><a href="#attendance-list">Attendance List</a></li>
@@ -46,13 +47,13 @@
         <h1>Team 24 Meeting Notes</h1>
         <!-- Added Inline CSS -->
         <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;">Meeting #1</h2>
-        <h4>Date: April 15, 2024</h4>
-        <h4>Location: Geisel Library, UCSD</h4>
+        <div><text>Date: April 15, 2024</text></div>
+        <div><text>Location: Geisel Library, UCSD</text></div>
         <h3 id="agenda">Agenda: Introduce team members and brainstorm for the CSE 110 project.</h3>
         
-        <section>
+        <section class="box">
             <h4 id="attendance-list"><u>Attendance Lists:</u></h4>
-            <ol>
+            <ol id="names">
                 <li>Terrance Tan</li>
                 <li>Sarvesh Mann</li>
                 <li>Ishaan Kale</li>
@@ -66,7 +67,7 @@
             </ol>
         </section>
 
-        <section>
+        <section class="box">
             <h4 id="unfinished-business"><u>Unfinished Business:</u></h4>
             <p>
                 Last time, we met outside the <strong>CSE 110</strong> classroom. We did not get to fully know each other so we 
@@ -78,7 +79,7 @@
             </p>
         </section>
 
-        <section>
+        <section class="box">
             <h4 id="new-business"><u>New Business:</u></h4>
             <p>
                 After introductions, we began the brainstorming session. To get some idea of the direction we want 
@@ -88,7 +89,7 @@
             </p>
         </section>
         
-        <section>
+        <section class="box">
             <h4 id="miscellaneous"><u>Miscellaneous comments/Questions:</u></h4>
             <ul>
                 <li>How do we know our roles? - Terrance Tan</li>
@@ -96,37 +97,42 @@
             </ul>
         </section>
         
-        <section>
-            <h4 id="audio-recording"><u>Audio recording:</u></h4>
-            <audio controls>
-                <source src="audio-video/audio.mp3" type="audio/ogg">
-                <source src="audio-video/audio.mp3" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-        </section>
+        <section class="media">
+            <section class="box2">
+                <h4 id="audio-recording"><u>Audio recording:</u></h4>
+                <audio controls>
+                    <source src="audio-video/audio.mp3" type="audio/ogg">
+                    <source src="audio-video/audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+                </audio>
+            </section>
 
-        <section>
-            <h4 id="video-recording"><u>Video recording:</u></h4>
-            <video width="400" height="300" controls="controls">
-                <source src="audio-video/video.mp4" type="video/WebM">
-                <source src="audio-video/video.mp4" type="video/mp4">
-                <source src="audio-video/video.mp4" type="video/ogg">
-            Your browser does not support the video tag.
-            </video>
+            <section class="box3">
+                <h4 id="video-recording"><u>Video recording:</u></h4>
+                <video width="400" height="300" controls="controls">
+                    <source src="audio-video/video.mp4" type="video/WebM">
+                    <source src="audio-video/video.mp4" type="video/mp4">
+                    <source src="audio-video/video.mp4" type="video/ogg">
+                Your browser does not support the video tag.
+                </video>
+            </section>
+
+            <section>
+                <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmU0bzJpY2NzM2QxdWdtNmF3Y3FucjgzdG5zb3N3MnlrNjZlcW4waCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/RlhbpcHWRfN5pSAq8h/giphy.gif" alt="See U" width="150" height="120">
+                <span attribute="foo"><b style="font-size: 1.5em;">Thank you for your time and consideration!</b></span>
+            </section>
         </section>
     </main>
 
-    <footer>
-        <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMmU0bzJpY2NzM2QxdWdtNmF3Y3FucjgzdG5zb3N3MnlrNjZlcW4waCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/RlhbpcHWRfN5pSAq8h/giphy.gif" alt="See U" width="150" height="120">
-        <span><b>Thank you for your time and consideration!</b></span>
-        <br>
-        <br>
-        <details>
-            <summary>&copy; Created by Sarvesh Mann</summary>
-            <p>Hi! I am a computer science student at UC San Diego. Know more about: <a href="https://sarveshmann.github.io/Lab-1-CSE-110/">me</a>.</p>
-        </details>
+    <hr />
 
+    <footer class="container">
+        <h5><details>
+            <summary>&copy; Created by Sarvesh Mann</summary>
+            <p style="font-size: 1em;">Hi! I am a computer science student at UC San Diego. Know more about: <a href="https://sarveshmann.github.io/Lab-1-CSE-110/">me</a>.</p>
+        </details></h5>
         <hr />
+
         <h4 id="subscribe">Take a quick survery to help us get feedback:</h4>
         <form onsubmit="alert('Response recorded. Thank you!')">
             <fieldset>
@@ -190,10 +196,20 @@
             
             <br>
             <br>
-
+            
             <input type="text" placeholder="Enter Email Address" />
             <button>Submit your response</button>
         </form>
+        <br>
+        <br>
+        <div class="end">
+            <button class="item1">UC San Diego</button>
+            <button class="item2">Report an error</button>
+            <button class="item3">Feedback</button>
+            <button class="item4">Contact us</button>
+            <button class="item5">Disclaimer</button>
+        </div>
+
     </footer>
   </body>
 </html>
