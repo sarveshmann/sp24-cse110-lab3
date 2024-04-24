@@ -131,6 +131,8 @@ li {
     margin: 3ch;
     /* display block */
     display: block;
+    /* position sticky */
+    position: sticky;
 }
 
 /* box3 */
@@ -145,6 +147,8 @@ li {
     width: fit-content;
     /* display inline-block */
     display: inline-block;
+    /* position static */
+    position: static;
 }
 
 
